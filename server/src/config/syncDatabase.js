@@ -1,6 +1,12 @@
 // syncDatabase.js  
 const sequelize = require('./database');  
-const User = require('../models/User');  
+const User = require('../models/User'); 
+const Seat = require("../models/Seat");
+const  Bus = require("../models/Bus");
+const Route = require("../models/Route");
+const Trip = require("../models/Trip");
+const Operator = require("../models/Operator");
+const Booking = require("../models/Booking");
 
 const syncDatabase = async () => {  
     try {  

@@ -22,6 +22,7 @@ sequelize.authenticate()
 // Routes  
 server.use('/api/users/', require('./routes/userRoute'));
 server.use('/api/auth/', require('./routes/authRoutes'));  
+server.use('/api/bookings/', require("./routes/bookingRoutes"));
 
 // Start the server  
 server.listen(PORT, () => {  
